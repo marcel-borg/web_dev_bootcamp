@@ -1,0 +1,33 @@
+body {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+div {
+    background-color: #EDE6DB;
+}
+
+h1 {
+    margin-top: 0px;
+}
+
+.top-container {
+    background-color: #EDE6DB;
+}
+
+.middle-container {
+    height: 200px;
+    width: 200px;
+    background-color: red;
+}
+
+.bottom-container {
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+}
+
+.pro {
+    text-decoration: underline;
+}

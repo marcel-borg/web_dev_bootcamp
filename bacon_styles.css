@@ -1,0 +1,54 @@
+/************************ TAG SELECTORS **********************/
+/* Just use the tag for Tag Selectors */
+
+h1 {
+    color: red;
+    font-size: 200px;
+}
+
+/* the :hover pseudo class changes the css when you hover over that tag*/
+img:hover {
+    background-color: gold;
+}
+
+
+/*********************** CLASS SELECTORS *********************/
+/* Use a . for Class Selectors */
+/* If you use a class selector, this will overwrite the regular tag selector as it is more specific */
+
+.bacon {
+    background-color: green;
+}
+
+.broccoli {
+    background-color: red;
+}
+
+.circular {
+    border-radius: 100%;
+}
+
+.line1 {
+    background-color: blue;
+}
+
+.line2 {
+    background-color: purple;
+}
+
+.line3 {
+    background-color: yellow;
+}
+
+/************************ ID SELECTORS **********************/
+/* Use a # for ID Selectors */
+
+/* If you use an ID selector, this will overwrite the regular tag selector as it is more specific */
+
+/* ID Selectors not as commonly used */
+
+#heading {
+    background-color: pink;
+    color: green;
+}
+

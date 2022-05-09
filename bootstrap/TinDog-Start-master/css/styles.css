@@ -1,5 +1,65 @@
+/* The more specific you are with your selectors/elements that is the CSS that will take effect.
+Eg: #title .container-fluid will only affect the .container-fluid in the title and nowhere else in the site that has just .container-fluid.
+When doing this, you must do it in the correct hierarchy. Go from right to left.
+eg: div .title  -- selects all the .title(child) classes within the div(parent) elements
+*/
+
+/*
+combining selectors
+space vs no space
+when you are selecting an element that has 2 classes do not put a space eg: <div class="title container">
+eg: .title.container
+If you are selecting an class within a div and another class within an h1 in the first div, then put the space.
+eg: .container .title
+<div class="container">
+  <h1 class="title container">
+    hello world
+  </h1>
+</div>
+*/
+
+
+
+/* HTML ELEMENTS */
+
 body {
     font-family: "Montserrat";
+}
+
+/* using multiple elements here because I want all my headings to be the same font and weight */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Montserrat";
+    font-weight: 900;
+}
+
+h1 {
+    /** couldn't get the montserrat-black had to put weight manually**/
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+h2 {
+    font-size: 3rem;
+    line-height: 1.5;
+
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8F8F8F;
+    font-weight: 600;
+}
+
+/* Headings */
+.big-heading {
+    font-family: "Montserrat";
+    font-weight: 900;
+    /** couldn't get the montserrat-black had to put weight manually**/
+    font-size: 3.5rem;
+    line-height: 1.5;
 }
 
 #title {
@@ -8,30 +68,7 @@ body {
     height: 750px;
 }
 
-h1 {
-    font-family: "Montserrat";
-    font-weight: 900; /** couldn't get the montserrat-black had to put weight manually**/
-    font-size: 2.5rem;
-    line-height: 1.5;
-}
 
-h2 {
-    font-family: "Montserrat";
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 1.5;
-
-}
-
-h3 {
-    font-family: "Montserrat";
-    font-weight: 900;
-}
-
-p {
-    color: #8F8F8F;
-    font-weight: 600;
-}
 
 .container-fluid {
     padding: 3% 15%;
@@ -92,7 +129,7 @@ p {
 }
 
 .features-icons:hover {
-    color:#FF4C68
+    color: #FF4C68
 }
 
 #features {

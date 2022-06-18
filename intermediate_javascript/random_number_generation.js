@@ -1,5 +1,6 @@
 // creating a random number using the Math.random() function
-// to create a random number between 1 and 6 * the random number by 6 and then +1 because it is not inclusive
+// because we need to use the floor function, it is going to generate a number betwen 0 and 5
+// so we then + 1 at the end to make it between 1 and 6
 
 var n = Math.random();
 n = n * 6;
